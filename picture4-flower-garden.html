@@ -124,53 +124,53 @@
         </div>
     </div>
 
-    <div class="quiz-section">
-        <h2>Quiz: Identify the Sentence Type</h2>
+ <div class="quiz-section">
+    <h2 style="color: #f39c12;">Quiz: Identify the Sentence Type</h2>
 
-        <form id="quizForm">
-            <div class="quiz">
-                <p>1. The children water the flowers.</p>
-                <label><input type="radio" name="q1" value="simple"> Simple Sentence</label><br>
-                <label><input type="radio" name="q1" value="compound"> Compound Sentence</label><br>
-                <label><input type="radio" name="q1" value="complex"> Complex Sentence</label><br>
-            </div>
+    <form id="quizForm">
 
-            <div class="quiz">
-                <p>2. Watering the flowers in the morning.</p>
-                <label><input type="radio" name="q2" value="non"> Non-Clause</label><br>
-                <label><input type="radio" name="q2" value="simple"> Simple Sentence</label><br>
-                <label><input type="radio" name="q2" value="compound"> Compound Sentence</label><br>
-            </div>
+        <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <p>1. The children water the flowers.</p>
+            <label><input type="radio" name="q1" value="simple"> Simple Sentence</label><br>
+            <label><input type="radio" name="q1" value="compound"> Compound Sentence</label><br>
+            <label><input type="radio" name="q1" value="complex"> Complex Sentence</label>
+        </div>
 
-            <div class="quiz">
-                <p>3. The sun is shining, and the flowers bloom.</p>
-                <label><input type="radio" name="q3" value="compound"> Compound Sentence</label><br>
-                <label><input type="radio" name="q3" value="complex"> Complex Sentence</label><br>
-                <label><input type="radio" name="q3" value="simple"> Simple Sentence</label><br>
-            </div>
+        <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <p>2. Watering the flowers in the morning.</p>
+            <label><input type="radio" name="q2" value="non"> Non-Clause</label><br>
+            <label><input type="radio" name="q2" value="simple"> Simple Sentence</label><br>
+            <label><input type="radio" name="q2" value="compound"> Compound Sentence</label>
+        </div>
 
-            <div class="quiz">
-                <p>4. The flowers bloom because the weather is good.</p>
-                <label><input type="radio" name="q4" value="complex"> Complex Sentence</label><br>
-                <label><input type="radio" name="q4" value="simple"> Simple Sentence</label><br>
-                <label><input type="radio" name="q4" value="compound"> Compound Sentence</label><br>
-            </div>
+        <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <p>3. The sun is shining, and the flowers bloom.</p>
+            <label><input type="radio" name="q3" value="compound"> Compound Sentence</label><br>
+            <label><input type="radio" name="q3" value="complex"> Complex Sentence</label><br>
+            <label><input type="radio" name="q3" value="simple"> Simple Sentence</label>
+        </div>
 
-            <div class="quiz">
-                <p>5. The flowers bloom, and the bees fly around because the sun is shining.</p>
-                <label><input type="radio" name="q5" value="compound-complex"> Compound-Complex Sentence</label><br>
-                <label><input type="radio" name="q5" value="simple"> Simple Sentence</label><br>
-                <label><input type="radio" name="q5" value="complex"> Complex Sentence</label><br>
-            </div>
+        <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <p>4. The flowers bloom because the weather is good.</p>
+            <label><input type="radio" name="q4" value="complex"> Complex Sentence</label><br>
+            <label><input type="radio" name="q4" value="simple"> Simple Sentence</label><br>
+            <label><input type="radio" name="q4" value="compound"> Compound Sentence</label>
+        </div>
 
-            <button type="button" onclick="checkAnswers()">Submit</button>
-        </form>
+        <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <p>5. The flowers bloom, and the bees fly around because the sun is shining.</p>
+            <label><input type="radio" name="q5" value="compound-complex"> Compound-Complex Sentence</label><br>
+            <label><input type="radio" name="q5" value="simple"> Simple Sentence</label><br>
+            <label><input type="radio" name="q5" value="complex"> Complex Sentence</label>
+        </div>
 
-        <p id="result" style="margin-top: 20px; font-size: 18px;"></p>
-    </div>
+        <button type="button" onclick="checkAnswers()" style="margin-top:20px;">Submit</button>
+    </form>
 
-    <a class="back-link" href="index.html">← Back to Home</a>
+    <p id="result" style="margin-top: 20px; font-size: 18px; color: #f39c12;"></p>
 </div>
+
+<a class="back-link" href="index.html">← Back to Home</a>
 
 <script>
     function checkAnswers() {
