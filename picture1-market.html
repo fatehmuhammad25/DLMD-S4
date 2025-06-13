@@ -48,6 +48,21 @@
         a.back-link:hover {
             text-decoration: underline;
         }
+        select, button {
+            padding: 8px;
+            border-radius: 5px;
+            margin-top: 8px;
+            border: none;
+        }
+        button {
+            background-color: #f39c12;
+            color: #1e1e1e;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
     </style>
 </head>
 <body>
@@ -61,13 +76,127 @@
     </div>
 
     <div class="description">
-        This is a picture of a traditional market. People come here to buy fresh vegetables, fruits, meat, and fish.
-        The market is very crowded in the morning. Some sellers shout to offer their products, and buyers bargain for better prices.
+        This is a picture of a traditional market. People come here to buy fresh vegetables and fruits. The market is very crowded in the morning. Some buyers and sellers can be seen making transactions.
     </div>
 
-    <a class="back-link" href="index.html">← Back to Home</a>
+    <div class="description">
+        <h2 style="color: #f39c12;">Sentence Levels in English</h2>
+        <p>In English grammar, sentences can be classified into several levels based on their structure. Here are the levels:</p>
+
+        <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <h3 style="color: #f39c12;">1. Non-Clause</h3>
+            <p>A group of words without a subject and a verb.</p>
+            <p style="font-style: italic; color: #ecf0f1;">Example: Buying fresh vegetables and fruits at the market.</p>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <h3 style="color: #f39c12;">2. Simple Sentence</h3>
+            <p>A sentence with one subject and one verb.</p>
+            <p style="font-style: italic; color: #ecf0f1;">Example: People buy fresh vegetables.</p>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <h3 style="color: #f39c12;">3. Compound Sentence</h3>
+            <p>Two simple sentences joined by a coordinating conjunction (and, but, so, etc.).</p>
+            <p style="font-style: italic; color: #ecf0f1;">Example: People buy vegetables, and sellers sell fish.</p>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <h3 style="color: #f39c12;">4. Complex Sentence</h3>
+            <p>One independent clause combined with one or more dependent clauses using subordinating conjunctions (because, although, if, etc.).</p>
+            <p style="font-style: italic; color: #ecf0f1;">Example: People buy vegetables because they are fresh.</p>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <h3 style="color: #f39c12;">5. Compound-Complex Sentence</h3>
+            <p>A combination of at least two independent clauses and one or more dependent clauses.</p>
+            <p style="font-style: italic; color: #ecf0f1;">Example: People buy vegetables, and sellers sell fish because they are in high demand.</p>
+        </div>
+    </div>
+
+    <!-- Quiz Section -->
+<div class="description" style="margin-top: 30px;">
+    <h2 style="color: #f39c12;">Quick Quiz</h2>
+    <p>Let's check your understanding. Choose the correct answer for each question!</p>
+
+    <form id="quizForm" style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 10px; margin-top: 15px;">
+
+        <div style="margin-bottom: 20px;">
+            <label for="q1" style="font-weight: bold;">1. Which sentence is a Simple Sentence?</label><br>
+            <select id="q1">
+                <option value="">-- Choose an answer --</option>
+                <option value="a">Because the market is crowded.</option>
+                <option value="b">People buy fresh vegetables.</option>
+                <option value="c">People buy vegetables, and sellers sell fish.</option>
+            </select>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label for="q2" style="font-weight: bold;">2. What is a Non-Clause?</label><br>
+            <select id="q2">
+                <option value="">-- Choose an answer --</option>
+                <option value="a">A group of words with a subject and a verb.</option>
+                <option value="b">A group of words without a subject and a verb.</option>
+                <option value="c">Two independent clauses joined by a conjunction.</option>
+            </select>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label for="q3" style="font-weight: bold;">3. Which sentence is a Compound Sentence?</label><br>
+            <select id="q3">
+                <option value="">-- Choose an answer --</option>
+                <option value="a">People buy vegetables because they are fresh.</option>
+                <option value="b">Buying vegetables at the market.</option>
+                <option value="c">People buy vegetables, and sellers sell fish.</option>
+            </select>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label for="q4" style="font-weight: bold;">4. A Complex Sentence must have:</label><br>
+            <select id="q4">
+                <option value="">-- Choose an answer --</option>
+                <option value="a">At least two independent clauses.</option>
+                <option value="b">One independent clause and one or more dependent clauses.</option>
+                <option value="c">A group of words without a subject and a verb.</option>
+            </select>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label for="q5" style="font-weight: bold;">5. Which one is a Compound-Complex Sentence?</label><br>
+            <select id="q5">
+                <option value="">-- Choose an answer --</option>
+                <option value="a">People buy vegetables because they are fresh.</option>
+                <option value="b">People buy vegetables, and sellers sell fish because they are in high demand.</option>
+                <option value="c">Buying vegetables and fruits at the market.</option>
+            </select>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Submit Answers</button>
+    </form>
+
+    <div id="quizResult" style="margin-top: 20px; font-weight: bold; color: #ecf0f1;"></div>
 </div>
+
+<script>
+function checkAnswers() {
+    var score = 0;
+    var total = 5;
+
+    var q1 = document.getElementById('q1').value;
+    var q2 = document.getElementById('q2').value;
+    var q3 = document.getElementById('q3').value;
+    var q4 = document.getElementById('q4').value;
+    var q5 = document.getElementById('q5').value;
+
+    if (q1 === "b") { score++; }
+    if (q2 === "b") { score++; }
+    if (q3 === "c") { score++; }
+    if (q4 === "b") { score++; }
+    if (q5 === "b") { score++; }
+
+    document.getElementById('quizResult').innerHTML = "You got " + score + " out of " + total + " correct.";
+}
+</script>
 
 </body>
 </html>
-
