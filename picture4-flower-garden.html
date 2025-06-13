@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flower Garden Picture</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px 30px;
+            background: rgba(0,0,0,0.5);
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.6);
+        }
+        .picture {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .picture img {
+            width: 100%;
+            max-width: 850px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.8);
+        }
+        .caption {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #f39c12;
+        }
+        .description {
+            font-size: 16px;
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+        .box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        a.back-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        a.back-link:hover {
+            text-decoration: underline;
+        }
+        .quiz-section {
+            margin-top: 30px;
+        }
+        .quiz-section h2 {
+            color: #f39c12;
+        }
+        .quiz {
+            margin-bottom: 20px;
+        }
+        .quiz p {
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #f39c12;
+            color: #1e1e1e;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 style="text-align: center; color: #f39c12;">Flower Garden Situation</h1>
+
+    <div class="picture">
+        <img src="images/Flower-Garden's.jpeg" alt="A Flower Garden">
+        <div class="caption">Some people are watering the flowers and cleaning the garden paths.</div>
+    </div>
+
+    <div class="description">
+        <h2 style="color: #f39c12;">Sentence Levels in English</h2>
+        <p>In English grammar, sentences can be classified into several levels based on their structure:</p>
+
+        <div class="box">
+            <h3 style="color: #f39c12;">1. Non-Clause</h3>
+            <p>A group of words without a subject and a verb.</p>
+            <p style="font-style: italic;">Example: Watering the flowers in the morning.</p>
+        </div>
+
+        <div class="box">
+            <h3 style="color: #f39c12;">2. Simple Sentence</h3>
+            <p>A sentence with one subject and one verb.</p>
+            <p style="font-style: italic;">Example: The flowers bloom.</p>
+        </div>
+
+        <div class="box">
+            <h3 style="color: #f39c12;">3. Compound Sentence</h3>
+            <p>Two simple sentences joined by a coordinating conjunction (and, but, so, etc.).</p>
+            <p style="font-style: italic;">Example: The flowers bloom, and the bees fly around.</p>
+        </div>
+
+        <div class="box">
+            <h3 style="color: #f39c12;">4. Complex Sentence</h3>
+            <p>One independent clause combined with one or more dependent clauses.</p>
+            <p style="font-style: italic;">Example: The flowers bloom because the weather is good.</p>
+        </div>
+
+        <div class="box">
+            <h3 style="color: #f39c12;">5. Compound-Complex Sentence</h3>
+            <p>A combination of at least two independent clauses and one or more dependent clauses.</p>
+            <p style="font-style: italic;">Example: The flowers bloom, and the bees fly around because the sun is shining.</p>
+        </div>
+    </div>
+
+    <div class="quiz-section">
+        <h2>Quiz: Identify the Sentence Type</h2>
+
+        <form id="quizForm">
+            <div class="quiz">
+                <p>1. The children water the flowers.</p>
+                <label><input type="radio" name="q1" value="simple"> Simple Sentence</label><br>
+                <label><input type="radio" name="q1" value="compound"> Compound Sentence</label><br>
+                <label><input type="radio" name="q1" value="complex"> Complex Sentence</label><br>
+            </div>
+
+            <div class="quiz">
+                <p>2. Watering the flowers in the morning.</p>
+                <label><input type="radio" name="q2" value="non"> Non-Clause</label><br>
+                <label><input type="radio" name="q2" value="simple"> Simple Sentence</label><br>
+                <label><input type="radio" name="q2" value="compound"> Compound Sentence</label><br>
+            </div>
+
+            <div class="quiz">
+                <p>3. The sun is shining, and the flowers bloom.</p>
+                <label><input type="radio" name="q3" value="compound"> Compound Sentence</label><br>
+                <label><input type="radio" name="q3" value="complex"> Complex Sentence</label><br>
+                <label><input type="radio" name="q3" value="simple"> Simple Sentence</label><br>
+            </div>
+
+            <div class="quiz">
+                <p>4. The flowers bloom because the weather is good.</p>
+                <label><input type="radio" name="q4" value="complex"> Complex Sentence</label><br>
+                <label><input type="radio" name="q4" value="simple"> Simple Sentence</label><br>
+                <label><input type="radio" name="q4" value="compound"> Compound Sentence</label><br>
+            </div>
+
+            <div class="quiz">
+                <p>5. The flowers bloom, and the bees fly around because the sun is shining.</p>
+                <label><input type="radio" name="q5" value="compound-complex"> Compound-Complex Sentence</label><br>
+                <label><input type="radio" name="q5" value="simple"> Simple Sentence</label><br>
+                <label><input type="radio" name="q5" value="complex"> Complex Sentence</label><br>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
+
+        <p id="result" style="margin-top: 20px; font-size: 18px;"></p>
+    </div>
+
+    <a class="back-link" href="index.html">← Back to Home</a>
+</div>
+
+<script>
+    function checkAnswers() {
+        const answers = {
+            q1: 'simple',
+            q2: 'non',
+            q3: 'compound',
+            q4: 'complex',
+            q5: 'compound-complex'
+        };
+
+        let score = 0;
+        for (let key in answers) {
+            const selected = document.querySelector(`input[name="${key}"]:checked`);
+            if (selected && selected.value === answers[key]) {
+                score++;
+            }
+        }
+
+        document.getElementById('result').innerText = 'Your score: ' + score + ' / 5';
+    }
+</script>
+
+</body>
+</html>
 
