@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Family Activity</title>
+    <title>School Situation</title>
     <style>
         body {
             background-color: #1e1e1e;
@@ -48,148 +48,124 @@
         a.back-link:hover {
             text-decoration: underline;
         }
-        .box {
-            background: rgba(255,255,255,0.05);
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 15px;
-        }
-        .quiz-question {
-            margin-top: 15px;
-        }
-        .quiz-result {
-            font-size: 18px;
-            color: #2ecc71;
-            margin-top: 20px;
-        }
         button {
             margin-top: 20px;
             padding: 10px 20px;
-            background: #3498db;
-            color: white;
             border: none;
-            border-radius: 8px;
+            background: #f39c12;
+            color: #fff;
+            border-radius: 5px;
             cursor: pointer;
-        }
-        button:hover {
-            background: #2980b9;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1 style="text-align: center; color: #f39c12;">Family Activity</h1>
+    <h1 style="text-align: center; color: #f39c12;">School Situation</h1>
 
     <div class="picture">
-        <img src="images/Family's.jpeg" alt="Family Activity">
-        <div class="caption">The parents are talking while the children play with their toys.</div>
+        <img src="images/School's.jpeg" alt="School Atmosphere">
+        <div class="caption">A School Environment in the Morning</div>
+    </div>
+
+    <div class="description">
+        This is a picture of a school. Students come here to study, play, and meet their friends. The school yard is crowded in the morning with students chatting and preparing for class.
+    </div>
+
+    <div class="description">
+        <h2 style="color: #f39c12;">Sentence Levels in English</h2>
+        <p>In English grammar, sentences can be classified into several levels. Here are the explanations:</p>
+
+        <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <h3 style="color: #f39c12;">1. Non-Clause</h3>
+            <p>A group of words without a subject and a verb.</p>
+            <p style="font-style: italic;">Example: Playing in the school yard.</p>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <h3 style="color: #f39c12;">2. Simple Sentence</h3>
+            <p>A sentence with one subject and one verb.</p>
+            <p style="font-style: italic;">Example: Students study English.</p>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <h3 style="color: #f39c12;">3. Compound Sentence</h3>
+            <p>Two simple sentences joined by a coordinating conjunction (and, but, so, etc.).</p>
+            <p style="font-style: italic;">Example: Students study, and teachers teach.</p>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <h3 style="color: #f39c12;">4. Complex Sentence</h3>
+            <p>One independent clause combined with one or more dependent clauses using subordinating conjunctions (because, although, if, etc.).</p>
+            <p style="font-style: italic;">Example: Students study because exams are coming.</p>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <h3 style="color: #f39c12;">5. Compound-Complex Sentence</h3>
+            <p>A combination of at least two independent clauses and one or more dependent clauses.</p>
+            <p style="font-style: italic;">Example: Students study, and teachers teach because they want good results.</p>
+        </div>
     </div>
 
 <div class="description">
-    <h2 style="color: #f39c12;">Sentence Levels in English</h2>
-    <p>In English grammar, sentences can be classified into several levels based on their structure:</p>
+    <h2 style="color: #f39c12;">Quiz: Sentence Levels</h2>
+    <p>Choose the correct answer for each question below:</p>
 
-    <div class="box">
-        <h3 style="color: #f39c12;">1. Non-Clause</h3>
-        <p>A group of words without a subject and a verb.</p>
-        <p style="font-style: italic;">Example: Playing with toys in the living room.</p>
-    </div>
+    <form id="quizForm">
+        <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <p>1. Which sentence is a Non-Clause?</p>
+            <label><input type="radio" name="q1" value="1"> Playing with toys in the living room.</label><br>
+            <label><input type="radio" name="q1" value="0"> The children play with toys.</label>
+        </div>
 
-    <div class="box">
-        <h3 style="color: #f39c12;">2. Simple Sentence</h3>
-        <p>A sentence with one subject and one verb.</p>
-        <p style="font-style: italic;">Example: The children play with their toys.</p>
-    </div>
+        <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <p>2. Which one is a Simple Sentence?</p>
+            <label><input type="radio" name="q2" value="1"> The parents are talking.</label><br>
+            <label><input type="radio" name="q2" value="0"> Talking in the living room.</label>
+        </div>
 
-    <div class="box">
-        <h3 style="color: #f39c12;">3. Compound Sentence</h3>
-        <p>Two simple sentences joined by a coordinating conjunction (and, but, so, etc.).</p>
-        <p style="font-style: italic;">Example: The parents are talking, and the children are playing.</p>
-    </div>
+        <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <p>3. Which one is a Compound Sentence?</p>
+            <label><input type="radio" name="q3" value="1"> The children play, and the parents talk.</label><br>
+            <label><input type="radio" name="q3" value="0"> Playing and talking together.</label>
+        </div>
 
-    <div class="box">
-        <h3 style="color: #f39c12;">4. Complex Sentence</h3>
-        <p>One independent clause combined with one or more dependent clauses.</p>
-        <p style="font-style: italic;">Example: The children play with their toys because they are happy.</p>
-    </div>
+        <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <p>4. Which one is a Complex Sentence?</p>
+            <label><input type="radio" name="q4" value="1"> The children play because they are happy.</label><br>
+            <label><input type="radio" name="q4" value="0"> The children play with toys.</label>
+        </div>
 
-    <div class="box">
-        <h3 style="color: #f39c12;">5. Compound-Complex Sentence</h3>
-        <p>A combination of at least two independent clauses and one or more dependent clauses.</p>
-        <p style="font-style: italic;">Example: The parents are talking, and the children are playing because it is Sunday.</p>
-    </div>
-</div>
+        <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin-top: 15px;">
+            <p>5. Which one is a Compound-Complex Sentence?</p>
+            <label><input type="radio" name="q5" value="1"> The parents are talking, and the children are playing because it is Sunday.</label><br>
+            <label><input type="radio" name="q5" value="0"> The children play with their toys.</label>
+        </div>
 
-    <div class="description">
-        <h2 style="color: #f39c12;">Quiz</h2>
+        <button type="button" onclick="checkAnswers()" style="margin-top:20px;">Submit</button>
+    </form>
 
-        <form id="quizForm">
-
-            <div class="quiz-question">
-                <p>1. Which sentence is a Non-Clause?</p>
-                <label><input type="radio" name="q1" value="a"> Playing with toys in the living room.</label><br>
-                <label><input type="radio" name="q1" value="b"> The children play with toys.</label>
-            </div>
-
-            <div class="quiz-question">
-                <p>2. Which one is a Simple Sentence?</p>
-                <label><input type="radio" name="q2" value="a"> The parents are talking.</label><br>
-                <label><input type="radio" name="q2" value="b"> Talking in the living room.</label>
-            </div>
-
-            <div class="quiz-question">
-                <p>3. Which one is a Compound Sentence?</p>
-                <label><input type="radio" name="q3" value="a"> The children play, and the parents talk.</label><br>
-                <label><input type="radio" name="q3" value="b"> Playing and talking together.</label>
-            </div>
-
-            <div class="quiz-question">
-                <p>4. Which one is a Complex Sentence?</p>
-                <label><input type="radio" name="q4" value="a"> The children play because they are happy.</label><br>
-                <label><input type="radio" name="q4" value="b"> The children play with toys.</label>
-            </div>
-
-            <div class="quiz-question">
-                <p>5. Which one is a Compound-Complex Sentence?</p>
-                <label><input type="radio" name="q5" value="a"> The parents are talking, and the children are playing because it is Sunday.</label><br>
-                <label><input type="radio" name="q5" value="b"> The children play with their toys.</label>
-            </div>
-
-            <button type="button" onclick="checkAnswers()">Submit</button>
-        </form>
-
-        <div class="quiz-result" id="result"></div>
-
-    </div>
-
-    <a class="back-link" href="index.html">← Back to Home</a>
+    <div class="quiz-result" id="result" style="margin-top: 20px; font-size: 18px; color: #f39c12;"></div>
 </div>
 
 <script>
 function checkAnswers() {
-    var score = 0;
-    var total = 5;
+    let score = 0;
+    let total = 5;
 
-    var answers = {
-        q1: "a",
-        q2: "a",
-        q3: "a",
-        q4: "a",
-        q5: "a"
-    };
-
-    for (var i = 1; i <= total; i++) {
-        var q = document.querySelector('input[name="q' + i + '"]:checked');
-        if (q && q.value === answers["q" + i]) {
-            score++;
+    for (let i = 1; i <= total; i++) {
+        let options = document.getElementsByName("q" + i);
+        for (let j = 0; j < options.length; j++) {
+            if (options[j].checked && options[j].value == "1") {
+                score++;
+            }
         }
     }
 
-    document.getElementById("result").innerHTML = "You scored " + score + " out of " + total + "!";
+    document.getElementById("result").innerHTML = "Your score is: " + score + " out of " + total + ".";
 }
 </script>
 
 </body>
 </html>
-
