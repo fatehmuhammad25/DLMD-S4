@@ -38,16 +38,20 @@
         .glossary-container p {
             line-height: 1.6;
         }
+        .table-responsive {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            min-width: 600px;
         }
         table, th, td {
             border: 1px solid #f39c12;
         }
         th, td {
-            padding: 12px;
+            padding: 10px;
             text-align: left;
         }
         th {
@@ -56,6 +60,12 @@
         }
         tr:nth-child(even) {
             background-color: rgba(255,255,255,0.05);
+        }
+        @media screen and (max-width: 600px) {
+            th, td {
+                padding: 8px;
+                font-size: 14px;
+            }
         }
         .footer {
             text-align: center;
@@ -93,7 +103,6 @@
         <li><strong>A1</strong> – Beginner: basic words for everyday situations.</li>
         <li><strong>A2</strong> – Elementary: slightly more descriptive and thematic words.</li>
         <li><strong>B1</strong> – Intermediate: broader vocabulary for explanation and description.</li>
-        <li><strong>B2</strong> – Upper-Intermediate: (optional if needed later)</li>
     </ul>
 
     <h3 style="color:#f39c12;">📌 Frequency Explanation:</h3>
@@ -110,43 +119,45 @@
         </li>
     </ul>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Word</th>
-                <th>Meaning (Arti)</th>
-                <th>CEFR Level</th>
-                <th>Frequency</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Level A1 -->
-            <tr><td colspan="4" style="background:#333; color:#f39c12; font-weight:bold;">Level A1 (Basic)</td></tr>
-            <tr><td>People</td><td>Orang-orang</td><td>A1</td><td>High</td></tr>
-            <tr><td>Boy</td><td>Anak laki-laki</td><td>A1</td><td>High</td></tr>
-            <tr><td>Girl</td><td>Anak perempuan</td><td>A1</td><td>High</td></tr>
-            <tr><td>Park</td><td>Taman</td><td>A1</td><td>High</td></tr>
-            <tr><td>Tree</td><td>Pohon</td><td>A1</td><td>High</td></tr>
-            <tr><td>Sun</td><td>Matahari</td><td>A1</td><td>High</td></tr>
-            <tr><td>Happy</td><td>Senang</td><td>A1</td><td>High</td></tr>
-            <tr><td>Run</td><td>Berlari</td><td>A1</td><td>High</td></tr>
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Meaning (Arti)</th>
+                    <th>CEFR Level</th>
+                    <th>Frequency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Level A1 -->
+                <tr><td colspan="4" style="background:#333; color:#f39c12; font-weight:bold;">Level A1 (Basic)</td></tr>
+                <tr><td>People</td><td>Orang-orang</td><td>A1</td><td>High</td></tr>
+                <tr><td>Boy</td><td>Anak laki-laki</td><td>A1</td><td>High</td></tr>
+                <tr><td>Girl</td><td>Anak perempuan</td><td>A1</td><td>High</td></tr>
+                <tr><td>Park</td><td>Taman</td><td>A1</td><td>High</td></tr>
+                <tr><td>Tree</td><td>Pohon</td><td>A1</td><td>High</td></tr>
+                <tr><td>Sun</td><td>Matahari</td><td>A1</td><td>High</td></tr>
+                <tr><td>Happy</td><td>Senang</td><td>A1</td><td>High</td></tr>
+                <tr><td>Run</td><td>Berlari</td><td>A1</td><td>High</td></tr>
 
-            <!-- Level A2 -->
-            <tr><td colspan="4" style="background:#333; color:#f39c12; font-weight:bold;">Level A2 (Elementary)</td></tr>
-            <tr><td>Playground</td><td>Tempat bermain anak</td><td>A2</td><td>High</td></tr>
-            <tr><td>Smile</td><td>Tersenyum</td><td>A2</td><td>High</td></tr>
-            <tr><td>Picture</td><td>Gambar</td><td>A2</td><td>High</td></tr>
-            <tr><td>Describe</td><td>Mendeskripsikan</td><td>A2</td><td>Mid</td></tr>
-            <tr><td>Cloudy</td><td>Berawan</td><td>A2</td><td>Mid</td></tr>
+                <!-- Level A2 -->
+                <tr><td colspan="4" style="background:#333; color:#f39c12; font-weight:bold;">Level A2 (Elementary)</td></tr>
+                <tr><td>Playground</td><td>Tempat bermain anak</td><td>A2</td><td>High</td></tr>
+                <tr><td>Smile</td><td>Tersenyum</td><td>A2</td><td>High</td></tr>
+                <tr><td>Picture</td><td>Gambar</td><td>A2</td><td>High</td></tr>
+                <tr><td>Describe</td><td>Mendeskripsikan</td><td>A2</td><td>Mid</td></tr>
+                <tr><td>Cloudy</td><td>Berawan</td><td>A2</td><td>Mid</td></tr>
 
-            <!-- Level B1 -->
-            <tr><td colspan="4" style="background:#333; color:#f39c12; font-weight:bold;">Level B1 (Intermediate)</td></tr>
-            <tr><td>Foreground</td><td>Bagian depan gambar</td><td>B1</td><td>Low</td></tr>
-            <tr><td>Background</td><td>Latar belakang</td><td>B1</td><td>Mid</td></tr>
-            <tr><td>Activity</td><td>Kegiatan</td><td>B1</td><td>Mid</td></tr>
-            <tr><td>Expression</td><td>Ekspresi wajah</td><td>B1</td><td>Low</td></tr>
-        </tbody>
-    </table>
+                <!-- Level B1 -->
+                <tr><td colspan="4" style="background:#333; color:#f39c12; font-weight:bold;">Level B1 (Intermediate)</td></tr>
+                <tr><td>Foreground</td><td>Bagian depan gambar</td><td>B1</td><td>Low</td></tr>
+                <tr><td>Background</td><td>Latar belakang</td><td>B1</td><td>Mid</td></tr>
+                <tr><td>Activity</td><td>Kegiatan</td><td>B1</td><td>Mid</td></tr>
+                <tr><td>Expression</td><td>Ekspresi wajah</td><td>B1</td><td>Low</td></tr>
+            </tbody>
+        </table>
+    </div>
 
     <a href="/DLMD-S4/index.html" class="back-link">&larr; Back to Home</a>
 </div>
@@ -157,4 +168,3 @@
 
 </body>
 </html>
-
